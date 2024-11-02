@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Model Predictions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Linear Model Predictions</h1>
+    <div class="upload-section">
+        <label for="csvFile">Upload CSV File:</label>
+        <input type="file" id="csvFile" accept=".csv">
+    </div>
+    <div class="model-section">
+        <label for="algorithm">Select Algorithm:</label>
+        <select id="algorithm">
+            <option value="linear">Linear Regression</option>
+            <!-- Add more algorithms as needed -->
+        </select>
+        <button id="trainModel">Train Model</button>
+        <button id="makePredictions">Make Predictions</button>
+    </div>
+    <div id="results"></div>
+    <canvas id="predictionChart" width="1500"></canvas>
+
+    <script src="scripts_tytus\LinearModel.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
