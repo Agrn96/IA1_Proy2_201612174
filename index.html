@@ -9,24 +9,35 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Linear Model Predictions</h1>
+    <h1>Predicciones Modelas 201612174 - IA1 Proy2</h1>
     <div class="upload-section">
         <label for="csvFile">Upload CSV File:</label>
         <input type="file" id="csvFile" accept=".csv">
     </div>
     <div class="model-section">
-        <label for="algorithm">Select Algorithm:</label>
+        <label for="algorithm">Seleccionar Algorithm:</label>
         <select id="algorithm">
             <option value="linear">Linear Regression</option>
-            <!-- Add more algorithms as needed -->
+            <option value="polynomial">Polynomial Regression</option>
         </select>
-        <button id="trainModel">Train Model</button>
-        <button id="makePredictions">Make Predictions</button>
+        <button id="trainModel">Entrenar Modela</button>
+        <button id="makePredictions">Hacer Predicciones</button>
     </div>
     <div id="results"></div>
-    <canvas id="predictionChart" width="1500"></canvas>
+    <canvas id="predictionChart" width="1250"></canvas>
 
+    <script type="module" src="scripts_js\CsvParser.js"></script>
+    
     <script src="scripts_tytus\LinearModel.js"></script>
-    <script src="main.js"></script>
+    <script type="module" src="scripts_js\LinearModelTest.js"></script>
+
+    <script src="scripts_tytus\PolynomialModel.js"></script>
+    <script type="module" src="scripts_js\PolynomialModelTest.js"></script>
+
 </body>
+
+<footer>
+    <p>Alberto Gabriel Reyes Ning</p>
+    <p>Proyecto 2 - Inteligencia Artificial 1 - 201612174</p>
+</footer>
 </html>
